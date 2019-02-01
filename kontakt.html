@@ -160,24 +160,24 @@
     <form method="post" id="forma" action="https://formspree.io/your@email.com">
 
     <div>
-      <label for="ime">Ime i prezime: </label>
+      <label for="ime">Your name: </label>
      <input id="ime" name="ime" required> <!--for i id povezani, name mi stize u mail sa poruku-->
     </div>
 
     <div>
-     <label for="telefon">Telefon: </label>
-     <input id="telefon" minlength="6" maxlength="20" name="Telefon" placeholder="+381">
+     <label for="telefon">Telephone: </label>
+     <input id="telefon" minlength="6" maxlength="20" name="Telefon">
      </div>
 
     <div>
-     <label for="email">email: </label>
+     <label for="email">Email: </label>
      <input id="email" type="email" name="mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required > <!--type email da ima monkey, pattern
        gleda kompletni mail-->
      </div>
 
 
     <div>
-     <label for="jezik">Izaberite jezik</label>
+     <label for="jezik">Choose language: </label>
     <select name="jezik" id="jezik">
      <option value="1">JavaScript</option>
      <option value="1">Java</option>
@@ -187,17 +187,17 @@
     <br>
 
     <div>
-     <label for="komentar">Vas komentar: </label>
-     <textarea id="komentar" name="komentar" placeholder="Upisite Vas komentar" style="height: 200px;"></textarea>
+     <label for="komentar">Your message: </label>
+     <textarea id="komentar" name="komentar" placeholder="Write your message..." style="height: 200px;"></textarea>
     </div>
 
     <div>
-     <label for="uslovi">Uslovi koristenja</label>
-     <input name="uslovi" id="uslovi" type="checkbox" required style="width: 8%;"><span style="color: white">Prihvatam uslove koristenja</span>
+     <label for="uslovi">Checkbox</label>
+     <input name="uslovi" id="uslovi" type="checkbox" required style="width: 8%;"><span style="color: white">I accept</span>
     </div>
 
     <div class="flex-right">
-     <button>Posalji</button>
+     <button>Submit</button>
     </div>
       </form>
 
