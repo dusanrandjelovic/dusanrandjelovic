@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Times New Roman";
+    }
+    header {
+      min-height: 100vh;
+      margin: 0;
+      position: relative;
+      background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("concrete-dirty.jpg");
+      background-size: cover;
+      width: 100%;
+    }
+    header img {
+      height: 70px;
+      width: 70px;
+      display: block;
+      margin: auto;
+      padding-top: 1%;
+      border: 1px solid black;
+    }
+    header h1, h2, h3 {
+      color: white;
+    }
+    header h2 {
+      animation: okret infinite 10s linear;
+      font-size: 48px;
+      margin-bottom: 0;
+    }
+    header h3 {
+      animation: kadole infinite 4s linear;
+        font-size: 48px;
+    position: absolute;
+    margin-top: 37%;
+    }
+    @keyframes okret {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+    @keyframes kadole {
+    from {
+        top: 0px;
+      }
+      to {
+        top: 50px;
+      }
+    }
+    .dugmad {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 7vh;
+    }
+    .dugmici {
+        display: flex;
+        flex-direction: column;
+      align-items: center;
+    }
+    .dugmad a {
+      padding: 6px;
+      margin: 12px;
+      border: 1px solid white;
+      color: white;
+      border-radius: 4px;
+      text-decoration: none;
+    }
+    .dugmad a:hover {
+      color: white;
+      text-transform: uppercase;
+    }
+
+      .red {
+        display: flex;
+      }
+      #prvi {
+        background: linear-gradient(rgba(11, 29, 172, 0.5), rgba(31,44, 136, 0.4)), url("lav.jpg");
+        width: 33%;
+        height: 50vh;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0 10px;
+      }
+      #prvi:hover, #drugi:hover, #treci:hover, #cetvrti:hover, #peti:hover, #sesti:hover, #sedmi:hover, #osmi:hover, #deveti:hover {
+        opacity: 0.9;
+      }
+      #drugi {
+        background: linear-gradient(rgba(11, 29, 172, 0.5), rgba(31,44, 136, 0.4)), url("concrete-dirty.jpg");
+        width: 33%;
+        height: 50vh;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0 10px;
+      }
+      #treci {
+        background: linear-gradient(rgba(11, 29, 172, 0.5), rgba(31,44, 136, 0.4)), url("planina.jpg");
+        width: 33%;
+        height: 50vh;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0 10px;
+      }
+      #cetvrti {
+          background: linear-gradient(rgba(11, 29, 172, 0.5), rgba(31,44, 136, 0.4)), url("pecina.jpg");
+        width: 33%;
+        height: 50vh;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0 10px;
+      }
+      #peti {
+        background: linear-gradient(rgba(11, 29, 172, 0.5), rgba(31,44, 136, 0.4)), url("tunel.jpg");
+        width: 33%;
+        height: 50vh;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0 10px;
+      }
+      #sesti {
+          background: linear-gradient(rgba(11, 29, 172, 0.5), rgba(31,44, 136, 0.4)), url("kuhinja.jpg");
+        width: 33%;
+        height: 50vh;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0 10px;
+      }
+      #sedmi {
+          background: linear-gradient(rgba(11, 29, 172, 0.5), rgba(31,44, 136, 0.4)), url("dog.jpg");
+        width: 33%;
+        height: 50vh;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0 10px;
+      }
+      #osmi {
+          background: linear-gradient(rgba(11, 29, 172, 0.5), rgba(31,44, 136, 0.4)), url("blato.jpg");
+        width: 33%;
+        height: 50vh;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0 10px;
+      }
+      #deveti {
+          background: linear-gradient(rgba(11, 29, 172, 0.5), rgba(31,44, 136, 0.4)), url("abstractbackground.jpg");
+        width: 33%;
+        height: 50vh;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0 10px;
+      }
+      main p {
+        color: white;
+        text-align: center;
+      }
+      main a {
+        background-color: white;
+        border-radius: 4px;
+        padding: 4px 12px;
+        text-decoration: none;
+      }
+      main a:hover {
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+      @media (max-width: 1000px){
+        header h3 {
+          margin-top: 56%;
+        }
+      }
+      @media (max-width: 748px){
+        .red {
+          flex-direction: column;
+        }
+        #prvi, #drugi, #treci, #cetvrti {
+          width: 100%;
+        }
+        header h3 {
+          margin-top: 75%;
+        }
+      }
+      @media (min-width: 748px){
+      .dugmad {
+
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        height: 100%;
+        -webkit-box-align: center;
+           -ms-flex-align: center;
+              align-items: center;
+        -webkit-box-pack: center;
+           -ms-flex-pack: center;
+         justify-content: center;
+       flex-direction: column;
+       margin-top: 16vh;
+      }
+      .dugmici {
+        flex-direction: row;
+      }
+      .dugmad a {
+        padding: 16px;
+        margin: 25px;
+
+      }
+    }
+      </style>
+  </head>
+  <body>
+    <header>
+<a href="index.html"><img src="duramali.png"></a>
+<div class="dugmad">
+<h2>&#9734;</h2>
+<h1>Responsive websites</h1>
+<div class="dugmici">
+<p><a href="#dole">See all</a></p>
+</div>
+<h3>&#9759;</h3>
+</div>
+
+      </header>
+    <main id="dole">
+      <div class="red">
+  <div id="prvi">
+     <p>Responsive website done with BootStrap. It has contact form, slider,
+     tabs, acordion, hamburger. </p>
+     <a href="https://durasite.000webhostapp.com" target="_blank">Lion</a>
+    </div>
+    <div id="drugi">
+       <p>This is a responsive website with a video as a background. It is minimalistic website
+       with an astonishing look.</p>
+       <a href="https://dusanportfolio.000webhostapp.com" target="_blank">Sea World</a>
+      </div>
+      <div id="treci">
+         <p>This is a responsive website with video as a background. It has green color as dominant.</p>
+         <a href="">Green Fog</a>
+        </div>
+      </div>
+
+      <div class="red">
+  <div id="cetvrti">
+     <p>This website has powerful contact form, blog section, photo gallery. It is also responsive.</p>
+     <a href="https://dusanrandjelovic.github.io/flexsajt/" target="_blank">Flex</a>
+    </div>
+    <div id="peti">
+       <p>This responsive website has contact form, blog, gallery and blue color as dominant. </p>
+       <a href="">Code solution</a>
+      </div>
+      <div id="sesti">
+         <p>This website has a font that is called italianno. It is responsive.</p>
+         <a href="">Recipes</a>
+        </div>
+      </div>
+
+      <div class="red">
+  <div id="sedmi">
+     <p>This website has slider, photo gallery. It is also responsive and done with BootStrap</p>
+     <a href="">Serbian Dogs</a>
+    </div>
+    <div id="osmi">
+       <p>Front page of this website is done po uzoru on one WordPress theme.</p>
+       <a href="">Nature Park</a>
+      </div>
+      <div id="deveti">
+         <p>Simple responsive website with photos as background and with parallax effect</p>
+         <a href="">Photos</a>
+        </div>
+      </div>
+      </main>
+  </body>
+</html>

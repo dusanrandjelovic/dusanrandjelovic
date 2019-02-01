@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>WordPress</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Times New Roman";
+    }
+    header {
+      min-height: 100vh;
+      margin: 0;
+      position: relative;
+      background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("concrete-dirty.jpg");
+      background-size: cover;
+      width: 100%;
+    }
+    header img {
+      height: 85px;
+      width: 75px;
+      display: block;
+      margin: auto;
+      padding-top: 1%;
+      border: 1px solid black;
+    }
+    header h1, h2, h3 {
+      color: white;
+    }
+    header h2 {
+      animation: okret infinite 10s linear;
+      font-size: 48px;
+      margin-bottom: 16px;
+
+    }
+    header h3 {
+      animation: kadole infinite 4s linear;
+        font-size: 48px;
+    position: absolute;
+    margin-top: 37%;
+    }
+    @keyframes okret {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+    @keyframes kadole {
+    from {
+        top: 0px;
+      }
+      to {
+        top: 50px;
+      }
+    }
+    .dugmad {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 7vh;
+    }
+    .red {
+        display: flex;
+        flex-direction: column;
+      align-items: center;
+    }
+    .dugmad a {
+      padding: 6px;
+      margin: 12px;
+      border: 1px solid white;
+      color: white;
+      border-radius: 4px;
+      text-decoration: none;
+    }
+    .dugmad a:hover {
+      color: white;
+      text-transform: uppercase;
+    }
+
+    #sestideo {
+      padding-top: 5%;
+      padding-bottom: 5%;
+    }
+    #sestideo p {
+      color: black;
+    }
+    #sestideo a {
+      color: saddlebrown;
+    }
+    #sestideo .tab-content a:hover {
+      text-decoration: none;
+      color: black;
+    }
+    main {
+    background: linear-gradient(rgba(250,250,250,.4), rgba(250,250,250,.4)), url("pozadina.jpg");
+    background-size: cover;
+    width: 100%;
+    padding-top: 9%;
+    padding-bottom: 9%;
+    background-attachment: fixed;
+  }
+    @media (max-width: 1000px){
+      header h3 {
+        margin-top: 56%;
+      }
+    }
+    @media (max-width: 748px){
+      header h3 {
+        margin-top: 75%;
+      }
+    }
+    @media (min-width: 748px){
+    .dugmad {
+
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      height: 100%;
+      -webkit-box-align: center;
+         -ms-flex-align: center;
+            align-items: center;
+      -webkit-box-pack: center;
+         -ms-flex-pack: center;
+       justify-content: center;
+     flex-direction: column;
+     margin-top: 20vh;
+    }
+    .red {
+      flex-direction: row;
+      margin-top: 16px;
+    }
+    .dugmad a {
+      padding: 16px;
+      margin: 25px;
+
+    }
+    /*header h3 {
+      margin-top: 37%;
+    }*/
+  }
+      </style>
+  </head>
+  <body>
+    <header>
+    <a href="index.html"><img src="duramali.png"></a>
+    <div class="dugmad">
+    <h2>&#10006;</h2>
+    <h1>WordPress</h1>
+    <div class="red">
+    <p><a href="#dole">See all</a></p>
+    </div>
+    <h3>&#9759;</h3>
+    </div>
+  </header>
+
+  <main id="dole">
+    <div class="container" id="sestideo">
+
+
+<ul class="nav nav-tabs" role="tablist">
+<li class="nav-item">
+<a class="nav-link active" data-toggle="tab" href="#home">How?</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-toggle="tab" href="#menu1">Balkan Ekspres</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-toggle="tab" href="#menu2">Delovi za viljuškare</a>
+</li>
+</ul>
+
+
+<div class="tab-content">
+<div id="home" class="container tab-pane active"><br>
+
+<p>Everyone can have free WordPress website. This all are mine: <a href="https://bestworldphotos.wordpress.com/" target="_blank">Best world photos,</a>
+  <a href="https://teretanadrajfus.wordpress.com/" target="_blank">Teretana Drajfus,</a>
+  <a href="https://mlekaramlecnizalogaj.wordpress.com/" target="_blank">Mlekara,</a> <a href="https://prirodnjackicentarsumarak.wordpress.com/" target="_blank">Sumarak,</a>
+  <a href="https://informalnoucenje.wordpress.com/" target="_blank">Informalno ucenje,</a>
+  <a href="https://claudiocaffe.wordpress.com/" target="_blank">Claudio Caffe,</a> <a href="https://serbiandogs.wordpress.com/" target="_blank">Dogs,</a>
+   <a href="https://plesnaskolamia.wordpress.com/" target="_blank">Plesna skola.</a>
+
+   </p>
+</div>
+<div id="menu1" class="container tab-pane fade"><br>
+
+<p>Client sad that he wants site same as restaurant Zabac. I tried it. In ThemifyUltra theme, with Themify builder,
+  I successfully finished test site for  <a href="http://balkan-ekspres.rs/" target="_blank">Balkan Ekspres</a>, and front page is almost 100% mine.
+     </p>
+</div>
+<div id="menu2" class="container tab-pane fade"><br>
+
+<p>This  <a href="http://www.delovizaviljuskare.rs/" target="_blank">site</a> I made in Astra Theme with eletrician demo content. It only took me couple of hours to finish it.
+   </p>
+</div>
+</div>
+      </div>
+  </main>
+  </body>
+</html>

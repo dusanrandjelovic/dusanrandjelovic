@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Times New Roman";
+    }
+    main {
+      min-height: 100vh;
+      margin: 0;
+      position: relative;
+      background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("concrete-dirty.jpg");
+      background-size: cover;
+      width: 100%;
+    }
+    img {
+      height: 70px;
+      width: 70px;
+      display: block;
+      margin: auto;
+      padding-top: 1%;
+      border: 1px solid black;
+    }
+    h1, h2 {
+      color: white;
+    }
+    h2 {
+      animation: okret infinite 10s linear;
+      font-size: 48px;
+      margin-bottom: 0;
+        border: 1px solid white;
+    }
+    @keyframes okret {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+    .dugmad {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 7vh;
+    }
+    .red {
+        display: flex;
+        flex-direction: column;
+      align-items: center;
+    }
+    a {
+      padding: 6px;
+      margin: 12px;
+      border: 1px solid white;
+      color: white;
+      border-radius: 4px;
+      text-decoration: none;
+    }
+    a:hover {
+      color: white;
+      text-transform: uppercase;
+    }
+    @media (min-width: 748px){
+    .dugmad {
+
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      height: 100%;
+      -webkit-box-align: center;
+         -ms-flex-align: center;
+            align-items: center;
+      -webkit-box-pack: center;
+         -ms-flex-pack: center;
+       justify-content: center;
+     flex-direction: column;
+     margin-top: 16vh;
+    }
+    .red {
+      flex-direction: row;
+    }
+    a {
+      padding: 16px;
+      margin: 25px;
+
+    }
+  }
+      </style>
+  </head>
+  <body>
+    <main>
+<img src="duramali.png">
+<div class="dugmad">
+<h2>&#9826;</h2>
+<h1>Dušan Ranđelović</h1>
+<div class="red">
+<p><a href="htmlcss.html">HTML and CSS</a></p>
+<p><a href="js.html">JavaScript</a></p>
+<p><a href="wordpress.html">WordPress</a></p>
+  <p><a href="kontakt.html">Contact</a></p>
+  </div>
+</div>
+</main>
+  </body>
+</html>
