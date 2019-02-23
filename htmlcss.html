@@ -9,6 +9,9 @@
     <meta name="author" content="Dusan Randjelovic | dusanrandjelovic92@gmail.com">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <style>
+    html {
+      scroll-behavior: smooth;
+    }
       body {
         margin: 0;
         padding: 0;
@@ -214,8 +217,8 @@
         .red {
           flex-direction: column;
         }
-        #prvi, #drugi, #treci, #cetvrti {
-          width: 100%;
+        #prvi, #drugi, #treci, #cetvrti, #peti, #sesti, #sedmi, #osmi, #deveti {
+          width: 97%;
         }
         header h3 {
           margin-top: 75%;
@@ -223,16 +226,9 @@
       }
       @media (min-width: 748px){
       .dugmad {
-
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
         height: 100%;
-        -webkit-box-align: center;
-           -ms-flex-align: center;
               align-items: center;
-        -webkit-box-pack: center;
-           -ms-flex-pack: center;
          justify-content: center;
        flex-direction: column;
        margin-top: 16vh;
@@ -244,6 +240,16 @@
         padding: 16px;
         margin: 25px;
 
+      }
+    }
+    @media (max-width: 460px){
+      header h3 {
+        margin-top: 85%;
+      }
+    }
+    @media (max-width: 390px){
+      header h3 {
+        margin-top: 95%;
       }
     }
       </style>
